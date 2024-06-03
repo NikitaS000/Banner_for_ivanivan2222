@@ -1,13 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    display: flex;
     justify-content: center;
-    font-family: Arial, sans-serif;
 }
 
 .banner {
-    width: 1456px;
+    width: 100%;
     height: 180px;
-    display: flex;
     overflow: hidden;
     position: relative;
 }
@@ -69,8 +71,8 @@ body {
 }
 
 .circle {
-    width: 52px;
-    height: 52px;
+    width: 10vh;
+    height: 10vh;
     margin: 0;
     background-color: #ffffff;
     position: absolute;
@@ -80,10 +82,10 @@ body {
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     user-select: none;
-    background-image: url("banner_images/arrows.png");
-    background-size: 60%;
+    background-image: url("banner_images/arrows.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 60%;
 }
 
 .text-image {
