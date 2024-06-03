@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    width: 1456px;
+    height: 180px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.comparison-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.comparison {
+    width: 370px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+
+.old-window,
+.new-window {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.new-window {
+    clip: rect(0, 185px, 180px, 0);
+}
+
+.text-container {
+    width: 1086px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: none;
+}
+
+
+.slider {
+    width: 5px;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 185px;
+    cursor: ew-resize;
+    user-select: none;
+    z-index: 2;
+}
+
+.circle {
+    width: 52px;
+    height: 52px;
+    margin: 0;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    background-image: url("banner_images/arrows.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: none;
+    z-index: 2;
+}
+
+.text-image:nth-child(2) {
+    z-index: 1;
+}
